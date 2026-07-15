@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bagas Prasetya — Software Developer</title>
+  <meta name="description" content="Software Developer dengan pengalaman lebih dari 3 tahun dalam pengembangan aplikasi web, dari sistem informasi pendidikan, e-commerce, hingga enterprise." />
+  <meta property="og:title" content="Bagas Prasetya — Software Developer" />
+  <meta property="og:description" content="Software Developer berpengalaman dalam frontend, backend, microservice, dan microfrontend." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">BP<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-label reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Bagas<br /><span>Prasetya</span></h1>
+      <p class="hero-role reveal">
+        <span class="role-tag">Software Developer</span>
+      </p>
+      <p class="hero-desc reveal">
+        3+ tahun membangun aplikasi web — dari sistem sekolah, e-commerce,<br class="br-desktop" />
+        hingga enterprise BUMN.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">Lihat Projects</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01 / About</span>
+        <h2 class="section-title">Tentang Saya</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Software Developer dengan pengalaman profesional lebih dari <strong>3 tahun</strong> dalam pengembangan aplikasi web, mulai dari sistem informasi pendidikan, e-commerce, hingga aplikasi enterprise.
+          </p>
+          <p>
+            Selama berkarier, saya telah terlibat dalam pengembangan aplikasi untuk institusi pendidikan, perusahaan swasta, dan <strong>BUMN</strong>. Pengalaman mencakup frontend dan backend, integrasi payment gateway, shipping provider, serta pengembangan berbasis <strong>microservice dan microfrontend</strong>.
+          </p>
+          <p>
+            Saya terbiasa bekerja dalam lingkungan yang menerapkan <strong>SDLC terstruktur</strong>, code review, kolaborasi lintas tim, dan standar kualitas tinggi.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02 / Projects</span>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <article class="project-card reveal" data-index="01">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-year">2023</span>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">Sistem Ujian &amp; Rapor Digital</h3>
+              <p class="project-client">SMA Negeri 1 Maos</p>
+            </div>
+            <span class="project-badge">Education</span>
+          </div>
+          <p class="project-desc">
+            Sistem informasi sekolah yang mendukung pelaksanaan ujian berbasis komputer serta pengelolaan nilai siswa, dengan fitur penilaian otomatis dan penyusunan rapor digital.
+          </p>
+          <ul class="project-contrib">
+            <li>Mengembangkan sistem ujian online untuk siswa</li>
+            <li>Implementasi penilaian otomatis berdasarkan jawaban peserta</li>
+            <li>Modul pengelolaan nilai dan rapor siswa</li>
+            <li>Pengembangan fitur administrasi sekolah</li>
+          </ul>
+          <p class="project-note">Source code di bawah pengelolaan klien</p>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal" data-index="02">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-year">2023</span>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">Kulakin</h3>
+              <p class="project-client">PT Erdigma Indonesia</p>
+            </div>
+            <span class="project-badge">E-Commerce</span>
+          </div>
+          <p class="project-desc">
+            Platform e-commerce sebagai kanal penjualan produk PT Erdigma Indonesia dengan fokus pada kebutuhan reseller.
+          </p>
+          <ul class="project-contrib">
+            <li>Kontribusi pengembangan aplikasi e-commerce end-to-end</li>
+            <li>Pengembangan fitur frontend dan backend</li>
+            <li>Integrasi payment gateway iPaymu</li>
+            <li>Mendukung proses transaksi dari checkout hingga pembayaran</li>
+          </ul>
+          <a href="https://store.kulakin.id/" target="_blank" rel="noopener" class="project-link">
+            store.kulakin.id
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal" data-index="03">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <span class="project-year">2024</span>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">OMS &amp; WMS</h3>
+              <p class="project-client">PT HKM — Supplier Telkomsel</p>
+            </div>
+            <span class="project-badge">Enterprise</span>
+          </div>
+          <p class="project-desc">
+            Pengembangan dua sistem internal PT HKM, salah satu supplier resmi Telkomsel: Order Management System untuk mengelola penjualan produk Telkomsel, dan Warehouse Management System untuk operasional pergudangan.
+          </p>
+          <ul class="project-contrib">
+            <li>Pengembangan Order Management System untuk produk Telkomsel seperti router, modem, dan kartu SIM</li>
+            <li>Integrasi payment gateway Midtrans dengan berbagai metode pembayaran, termasuk Virtual Account</li>
+            <li>Integrasi layanan pengiriman: AnterAja, SiCepat, dan GrabExpress</li>
+            <li>Pengembangan Warehouse Management System untuk pengelolaan stok dan operasional gudang</li>
+          </ul>
+          <a href="https://oms.hkm.co.id/" target="_blank" rel="noopener" class="project-link">
+            oms.hkm.co.id
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal" data-index="04">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <span class="project-year">2024</span>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">Assessment Center Application</h3>
+              <p class="project-client">ASI Asia Pacific</p>
+            </div>
+            <span class="project-badge">HR Tech</span>
+          </div>
+          <p class="project-desc">
+            Aplikasi psikotes digital yang digunakan oleh perusahaan untuk proses seleksi karyawan baru maupun evaluasi promosi jabatan, mencakup berbagai modul asesmen yang terstandarisasi.
+          </p>
+          <ul class="project-contrib">
+            <li>Pengembangan platform assessment center berbasis web</li>
+            <li>Implementasi berbagai modul tes psikologi dan kompetensi secara digital</li>
+            <li>Mendukung proses seleksi karyawan dan evaluasi kenaikan pangkat</li>
+          </ul>
+          <a href="https://www.peepl.tech/" target="_blank" rel="noopener" class="project-link">
+            peepl.tech
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card project-card--featured reveal" data-index="05">
+        <div class="project-meta">
+          <span class="project-num">05</span>
+          <span class="project-year">2025 – Now</span>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">Enterprise Application Development</h3>
+              <p class="project-client">PT Pegadaian (BUMN)</p>
+            </div>
+            <span class="project-badge project-badge--gold">BUMN</span>
+          </div>
+          <p class="project-desc">
+            Terlibat dalam pengembangan berbagai aplikasi internal dan publik PT Pegadaian menggunakan arsitektur <strong>microservice dan microfrontend</strong>, dalam lingkungan enterprise dengan SDLC terstruktur.
+          </p>
+          <div class="sub-projects">
+            <div class="sub-project">
+              <div class="sub-project-header">
+                <span class="sub-dot"></span>
+                <strong>Pegadaian Corporate Website</strong>
+              </div>
+              <p>Pengembangan modul website resmi, termasuk fitur layanan Bank Emas.</p>
+              <a href="https://pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                pegadaian.co.id
+              </a>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-header">
+                <span class="sub-dot"></span>
+                <strong>Pegadaian Kita</strong>
+              </div>
+              <p>Portal digital internal pegawai PT Pegadaian. Kontribusi pada modul microfrontend.</p>
+              <a href="https://kita.pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                kita.pegadaian.co.id
+              </a>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-header">
+                <span class="sub-dot"></span>
+                <strong>eOffice Pegadaian</strong>
+              </div>
+              <p>Platform administrasi dan operasional perkantoran digital: surat-menyurat, surat tugas, dan digitalisasi internal.</p>
+              <a href="https://eoffice.pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                eoffice.pegadaian.co.id
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03 / Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <p class="skills-intro reveal">
+        Teknologi yang saya gunakan selama mengerjakan berbagai proyek profesional.
+      </p>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Microfrontend</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Backend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Fiber</span>
+            <span class="skill-tag">Gin</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Microservice</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Mobile</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Android (Native)</span>
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">Jetpack Compose</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Database &amp; Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">SonarQube</span>
+            <span class="skill-tag">Red Hat OpenShift</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <p class="contact-intro reveal">
+        Terbuka untuk peluang baru, kolaborasi, atau sekadar ngobrol soal teknologi.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:bagasp5621@gmail.com" class="contact-item" id="contact-email">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">bagasp5621@gmail.com</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+
+        <a href="tel:082133972208" class="contact-item" id="contact-phone">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Phone / WhatsApp</span>
+            <span class="contact-value">+62 821-3397-2208</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+
+        <a href="https://github.com/bagasp5621" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/bagasp5621</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+
+        <a href="https://id.linkedin.com/in/bagas-prasetya-70640a222" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Bagas Prasetya</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Bagas Prasetya</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
