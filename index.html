@@ -22,20 +22,30 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">BP<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav-about">About</a></li>
+        <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+        <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="id">ID</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav-mobile" id="navMobile">
-      <a href="#about" class="mobile-link">About</a>
-      <a href="#projects" class="mobile-link">Projects</a>
-      <a href="#skills" class="mobile-link">Skills</a>
-      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#about" class="mobile-link" data-i18n="nav-about">About</a>
+      <a href="#projects" class="mobile-link" data-i18n="nav-projects">Projects</a>
+      <a href="#skills" class="mobile-link" data-i18n="nav-skills">Skills</a>
+      <a href="#contact" class="mobile-link" data-i18n="nav-contact">Contact</a>
+      <div class="lang-switcher-mobile">
+        <button class="lang-btn active" data-lang="id">ID</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </div>
   </nav>
 
@@ -47,18 +57,18 @@
       <div class="hero-grid"></div>
     </div>
     <div class="container hero-content">
-      <p class="hero-label reveal">Hello, I'm</p>
+      <p class="hero-label reveal" data-i18n="hero-label">Hello, I'm</p>
       <h1 class="hero-name reveal">Bagas<br /><span>Prasetya</span></h1>
       <p class="hero-role reveal">
         <span class="role-tag">Software Developer</span>
       </p>
-      <p class="hero-desc reveal">
+      <p class="hero-desc reveal" data-i18n="hero-desc">
         3+ tahun membangun aplikasi web — dari sistem sekolah, e-commerce,<br class="br-desktop" />
         hingga enterprise BUMN.
       </p>
       <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary">Lihat Projects</a>
-        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero-cta-projects">Lihat Projects</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero-cta-contact">Hubungi Saya</a>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -71,17 +81,17 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">01 / About</span>
-        <h2 class="section-title">Tentang Saya</h2>
+        <h2 class="section-title" data-i18n="section-title-about">Tentang Saya</h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
+          <p data-i18n="about-p1">
             Software Developer dengan pengalaman profesional lebih dari <strong>3 tahun</strong> dalam pengembangan aplikasi web, mulai dari sistem informasi pendidikan, e-commerce, hingga aplikasi enterprise.
           </p>
-          <p>
+          <p data-i18n="about-p2">
             Selama berkarier, saya telah terlibat dalam pengembangan aplikasi untuk institusi pendidikan, perusahaan swasta, dan <strong>BUMN</strong>. Pengalaman mencakup frontend dan backend, integrasi payment gateway, shipping provider, serta pengembangan berbasis <strong>microservice dan microfrontend</strong>.
           </p>
-          <p>
+          <p data-i18n="about-p3">
             Saya terbiasa bekerja dalam lingkungan yang menerapkan <strong>SDLC terstruktur</strong>, code review, kolaborasi lintas tim, dan standar kualitas tinggi.
           </p>
         </div>
@@ -112,7 +122,7 @@
             </div>
             <span class="project-badge project-badge--gold">BUMN</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="project-desc-1">
             Terlibat dalam pengembangan berbagai aplikasi internal dan publik PT Pegadaian menggunakan arsitektur <strong>microservice dan microfrontend</strong>, dalam lingkungan enterprise dengan SDLC terstruktur.
           </p>
           <div class="sub-projects">
@@ -121,7 +131,7 @@
                 <span class="sub-dot"></span>
                 <strong>Pegadaian Corporate Website</strong>
               </div>
-              <p>Pengembangan modul website resmi, termasuk fitur layanan Bank Emas.</p>
+              <p data-i18n="sub-project-1-desc">Pengembangan modul website resmi, termasuk fitur layanan Bank Emas.</p>
               <a href="https://pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 pegadaian.co.id
@@ -132,7 +142,7 @@
                 <span class="sub-dot"></span>
                 <strong>Pegadaian Kita</strong>
               </div>
-              <p>Portal digital internal pegawai PT Pegadaian. Kontribusi pada modul microfrontend.</p>
+              <p data-i18n="sub-project-2-desc">Portal digital internal pegawai PT Pegadaian. Kontribusi pada modul microfrontend.</p>
               <a href="https://kita.pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 kita.pegadaian.co.id
@@ -143,7 +153,7 @@
                 <span class="sub-dot"></span>
                 <strong>eOffice Pegadaian</strong>
               </div>
-              <p>Platform administrasi dan operasional perkantoran digital: surat-menyurat, surat tugas, dan digitalisasi internal.</p>
+              <p data-i18n="sub-project-3-desc">Platform administrasi dan operasional perkantoran digital: surat-menyurat, surat tugas, dan digitalisasi internal.</p>
               <a href="https://eoffice.pegadaian.co.id/" target="_blank" rel="noopener" class="sub-project-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 eoffice.pegadaian.co.id
@@ -167,13 +177,13 @@
             </div>
             <span class="project-badge">HR Tech</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="project-desc-2">
             Aplikasi psikotes digital yang digunakan oleh perusahaan untuk proses seleksi karyawan baru maupun evaluasi promosi jabatan, mencakup berbagai modul asesmen yang terstandarisasi.
           </p>
           <ul class="project-contrib">
-            <li>Pengembangan platform assessment center berbasis web</li>
-            <li>Implementasi berbagai modul tes psikologi dan kompetensi secara digital</li>
-            <li>Mendukung proses seleksi karyawan dan evaluasi kenaikan pangkat</li>
+            <li data-i18n="project-contrib-2-1">Pengembangan platform assessment center berbasis web</li>
+            <li data-i18n="project-contrib-2-2">Implementasi berbagai modul tes psikologi dan kompetensi secara digital</li>
+            <li data-i18n="project-contrib-2-3">Mendukung proses seleksi karyawan dan evaluasi kenaikan pangkat</li>
           </ul>
           <a href="https://www.peepl.tech/" target="_blank" rel="noopener" class="project-link">
             peepl.tech
@@ -196,14 +206,14 @@
             </div>
             <span class="project-badge">Enterprise</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="project-desc-3">
             Pengembangan dua sistem internal PT HKM, salah satu supplier resmi Telkomsel: Order Management System untuk mengelola penjualan produk Telkomsel, dan Warehouse Management System untuk operasional pergudangan.
           </p>
           <ul class="project-contrib">
-            <li>Pengembangan Order Management System untuk produk Telkomsel seperti router, modem, dan kartu SIM</li>
-            <li>Integrasi payment gateway Midtrans dengan berbagai metode pembayaran, termasuk Virtual Account</li>
-            <li>Integrasi layanan pengiriman: AnterAja, SiCepat, dan GrabExpress</li>
-            <li>Pengembangan Warehouse Management System untuk pengelolaan stok dan operasional gudang</li>
+            <li data-i18n="project-contrib-3-1">Pengembangan Order Management System untuk produk Telkomsel seperti router, modem, dan kartu SIM</li>
+            <li data-i18n="project-contrib-3-2">Integrasi payment gateway Midtrans dengan berbagai metode pembayaran, termasuk Virtual Account</li>
+            <li data-i18n="project-contrib-3-3">Integrasi layanan pengiriman: AnterAja, SiCepat, dan GrabExpress</li>
+            <li data-i18n="project-contrib-3-4">Pengembangan Warehouse Management System untuk pengelolaan stok dan operasional gudang</li>
           </ul>
           <a href="https://oms.hkm.co.id/" target="_blank" rel="noopener" class="project-link">
             oms.hkm.co.id
@@ -226,14 +236,14 @@
             </div>
             <span class="project-badge">E-Commerce</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="project-desc-4">
             Platform e-commerce sebagai kanal penjualan produk PT Erdigma Indonesia dengan fokus pada kebutuhan reseller.
           </p>
           <ul class="project-contrib">
-            <li>Kontribusi pengembangan aplikasi e-commerce end-to-end</li>
-            <li>Pengembangan fitur frontend dan backend</li>
-            <li>Integrasi payment gateway iPaymu</li>
-            <li>Mendukung proses transaksi dari checkout hingga pembayaran</li>
+            <li data-i18n="project-contrib-4-1">Kontribusi pengembangan aplikasi e-commerce end-to-end</li>
+            <li data-i18n="project-contrib-4-2">Pengembangan fitur frontend dan backend</li>
+            <li data-i18n="project-contrib-4-3">Integrasi payment gateway iPaymu</li>
+            <li data-i18n="project-contrib-4-4">Mendukung proses transaksi dari checkout hingga pembayaran</li>
           </ul>
           <a href="https://store.kulakin.id/" target="_blank" rel="noopener" class="project-link">
             store.kulakin.id
@@ -251,21 +261,21 @@
         <div class="project-body">
           <div class="project-header">
             <div>
-              <h3 class="project-title">Sistem Ujian &amp; Rapor Digital</h3>
+              <h3 class="project-title" data-i18n="project-title-5">Sistem Ujian &amp; Rapor Digital</h3>
               <p class="project-client">SMA Negeri 1 Maos</p>
             </div>
             <span class="project-badge">Education</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="project-desc-5">
             Sistem informasi sekolah yang mendukung pelaksanaan ujian berbasis komputer serta pengelolaan nilai siswa, dengan fitur penilaian otomatis dan penyusunan rapor digital.
           </p>
           <ul class="project-contrib">
-            <li>Mengembangkan sistem ujian online untuk siswa</li>
-            <li>Implementasi penilaian otomatis berdasarkan jawaban peserta</li>
-            <li>Modul pengelolaan nilai dan rapor siswa</li>
-            <li>Pengembangan fitur administrasi sekolah</li>
+            <li data-i18n="project-contrib-5-1">Mengembangkan sistem ujian online untuk siswa</li>
+            <li data-i18n="project-contrib-5-2">Implementasi penilaian otomatis berdasarkan jawaban peserta</li>
+            <li data-i18n="project-contrib-5-3">Modul pengelolaan nilai dan rapor siswa</li>
+            <li data-i18n="project-contrib-5-4">Pengembangan fitur administrasi sekolah</li>
           </ul>
-          <p class="project-note">Source code di bawah pengelolaan klien</p>
+          <p class="project-note" data-i18n="project-note">Source code di bawah pengelolaan klien</p>
         </div>
       </article>
     </div>
@@ -278,7 +288,7 @@
         <span class="section-label">03 / Skills</span>
         <h2 class="section-title">Technical Skills</h2>
       </div>
-      <p class="skills-intro reveal">
+      <p class="skills-intro reveal" data-i18n="skills-intro">
         Teknologi yang saya gunakan selama mengerjakan berbagai proyek profesional.
       </p>
       <div class="skills-grid reveal">
@@ -348,7 +358,7 @@
         <span class="section-label">04 / Contact</span>
         <h2 class="section-title">Let's Connect</h2>
       </div>
-      <p class="contact-intro reveal">
+      <p class="contact-intro reveal" data-i18n="contact-intro">
         Terbuka untuk peluang baru, kolaborasi, atau sekadar ngobrol soal teknologi.
       </p>
       <div class="contact-links reveal">
@@ -406,6 +416,7 @@
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -109,3 +109,59 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ============================================
+// I18N LANGUAGE SWITCHER
+// ============================================
+function setLanguage(lang) {
+  // Update document language
+  document.documentElement.lang = lang;
+  
+  // Update texts
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  // Update active button state
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Save preference
+  localStorage.setItem('preferred-lang', lang);
+}
+
+// Detect default language
+function initLanguage() {
+  const savedLang = localStorage.getItem('preferred-lang');
+  if (savedLang) {
+    setLanguage(savedLang);
+  } else {
+    // Detect browser/OS language
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.toLowerCase().includes('id')) {
+      setLanguage('id');
+    } else {
+      setLanguage('en');
+    }
+  }
+}
+
+// Add event listeners to switcher buttons
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const lang = e.target.getAttribute('data-lang');
+    setLanguage(lang);
+  });
+});
+
+// Initialize on load
+initLanguage();
